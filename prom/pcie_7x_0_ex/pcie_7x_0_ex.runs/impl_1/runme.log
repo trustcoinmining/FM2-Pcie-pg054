@@ -1,0 +1,703 @@
+
+*** Running vivado
+    with args -log xilinx_pcie_2_1_ep_7x.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source xilinx_pcie_2_1_ep_7x.tcl -notrace
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source xilinx_pcie_2_1_ep_7x.tcl -notrace
+WARNING: [Board 49-69] Validation failed for board file C:/Xilinx/Vivado/2018.3/data/boards/board_files/k410tFM2/1.0/board.xml:
+ Pin Map file does not provide LOC constraints for PHY_TXD0COMP : xilinx.com:k410tfm2:part0:1.0
+
+CRITICAL WARNING: [Board 49-56] Problem parsing board file - C:/Xilinx/Vivado/2018.3/data/boards/board_files/k410tFM2/1.0/board.xml
+Command: link_design -top xilinx_pcie_2_1_ep_7x -part xc7k410tffg900-2
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'd:/Documents/FPGA-Miner/xilinx-study/pci-e/pg054/pcie_ex2-tendomprom/pcie_7x_0_ex/pcie_7x_0_ex.srcs/sources_1/ip/pcie_7x_0/pcie_7x_0.dcp' for cell 'pcie_7x_0_support_i/pcie_7x_0_i'
+INFO: [Netlist 29-17] Analyzing 196 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7k410tffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/Documents/FPGA-Miner/xilinx-study/pci-e/pg054/pcie_ex2-tendomprom/pcie_7x_0_ex/pcie_7x_0_ex.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc] for cell 'pcie_7x_0_support_i/pcie_7x_0_i/inst'
+Finished Parsing XDC File [d:/Documents/FPGA-Miner/xilinx-study/pci-e/pg054/pcie_ex2-tendomprom/pcie_7x_0_ex/pcie_7x_0_ex.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc] for cell 'pcie_7x_0_support_i/pcie_7x_0_i/inst'
+Parsing XDC File [D:/Documents/FPGA-Miner/xilinx-study/pci-e/pg054/pcie_ex2-tendomprom/pcie_7x_0_ex/imports/xilinx_pcie_7x_ep_x8g1.xdc]
+Finished Parsing XDC File [D:/Documents/FPGA-Miner/xilinx-study/pci-e/pg054/pcie_ex2-tendomprom/pcie_7x_0_ex/imports/xilinx_pcie_7x_ep_x8g1.xdc]
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pl_received_hot_rst_cdc'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pl_received_hot_rst_cdc'
+Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/phy_lnk_up_cdc'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/phy_lnk_up_cdc'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1434.754 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+8 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1434.754 ; gain = 1063.520
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k410t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k410t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 1434.754 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1df0536b8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.406 . Memory (MB): peak = 1434.754 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1784a4988
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.742 . Memory (MB): peak = 1489.941 ; gain = 0.543
+INFO: [Opt 31-389] Phase Retarget created 208 cells and removed 219 cells
+INFO: [Opt 31-1021] In phase Retarget, 10 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 185cbdf56
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.915 . Memory (MB): peak = 1489.941 ; gain = 0.543
+INFO: [Opt 31-389] Phase Constant propagation created 2 cells and removed 166 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 2 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1c4a21b14
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1489.941 ; gain = 0.543
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 2424 cells
+INFO: [Opt 31-1021] In phase Sweep, 5 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG pcie_7x_0_support_i/pipe_clock_i/clk_125mhz_BUFG_inst to drive 0 load(s) on clock net pcie_7x_0_support_i/pipe_clock_i/clk_125mhz_BUFG
+INFO: [Opt 31-194] Inserted BUFG pcie_7x_0_support_i/pipe_clock_i/clk_250mhz_BUFG_inst to drive 0 load(s) on clock net pcie_7x_0_support_i/pipe_clock_i/clk_250mhz_BUFG
+INFO: [Opt 31-194] Inserted BUFG pcie_7x_0_support_i/pipe_clock_i/userclk1_BUFG_inst to drive 0 load(s) on clock net pcie_7x_0_support_i/pipe_clock_i/userclk1_BUFG
+INFO: [Opt 31-193] Inserted 3 BUFG(s) on clock nets
+Phase 4 BUFG optimization | Checksum: 194a97500
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1489.941 ; gain = 0.543
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 1384fa225
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1489.941 ; gain = 0.543
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 11e3edf2d
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1489.941 ; gain = 0.543
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             208  |             219  |                                             10  |
+|  Constant propagation         |               2  |             166  |                                              2  |
+|  Sweep                        |               0  |            2424  |                                              5  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              1  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1489.941 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: d844a808
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1489.941 ; gain = 0.543
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.964 | TNS=0.000 |
+INFO: [Power 33-23] Power model is not available for startup_inst
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 12 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 4 Total Ports: 24
+Ending PowerOpt Patch Enables Task | Checksum: f0fb5fa5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 1685.504 ; gain = 0.000
+Ending Power Optimization Task | Checksum: f0fb5fa5
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1685.504 ; gain = 195.563
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 16b33bc47
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.738 . Memory (MB): peak = 1685.504 ; gain = 0.000
+Ending Final Cleanup Task | Checksum: 16b33bc47
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1685.504 ; gain = 0.000
+Parsing TCL File [d:/Documents/FPGA-Miner/xilinx-study/pci-e/pg054/pcie_ex2-tendomprom/pcie_7x_0_ex/pcie_7x_0_ex.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_build_stage1.tcl] from IP D:/Documents/FPGA-Miner/xilinx-study/pci-e/pg054/pcie_ex2-tendomprom/pcie_7x_0_ex/pcie_7x_0_ex.srcs/sources_1/ip/pcie_7x_0/pcie_7x_0.xci
+Sourcing Tcl File [d:/Documents/FPGA-Miner/xilinx-study/pci-e/pg054/pcie_ex2-tendomprom/pcie_7x_0_ex/pcie_7x_0_ex.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_build_stage1.tcl]
+**** INFO: No BSCAN Primitives in this design ****
+Finished Sourcing Tcl File [d:/Documents/FPGA-Miner/xilinx-study/pci-e/pg054/pcie_ex2-tendomprom/pcie_7x_0_ex/pcie_7x_0_ex.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_build_stage1.tcl]
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1685.504 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 16b33bc47
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1685.504 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+40 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 1685.504 ; gain = 250.750
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1685.504 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 1685.504 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1685.504 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Documents/FPGA-Miner/xilinx-study/pci-e/pg054/pcie_ex2-tendomprom/pcie_7x_0_ex/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file xilinx_pcie_2_1_ep_7x_drc_opted.rpt -pb xilinx_pcie_2_1_ep_7x_drc_opted.pb -rpx xilinx_pcie_2_1_ep_7x_drc_opted.rpx
+Command: report_drc -file xilinx_pcie_2_1_ep_7x_drc_opted.rpt -pb xilinx_pcie_2_1_ep_7x_drc_opted.pb -rpx xilinx_pcie_2_1_ep_7x_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/Documents/FPGA-Miner/xilinx-study/pci-e/pg054/pcie_ex2-tendomprom/pcie_7x_0_ex/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k410t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k410t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC CFGBVS-11] CONFIG_VOLTAGE with HR Config Banks: Unable to determine configuration voltage for configuration Bank 14. When multi-function configuration banks are being used for configuration Vivado must be able to determine the configuration voltage to be used. Using PERSIST or EMCCLK implies that a multi-function configuration bank is being used. If this is not the case, please do not use these settings. Otherwise, if the bank is being used for configuration, please use set_property CONFIG_VOLTAGE [current_design] to indicate the voltage to be used.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1685.504 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 7ff9c498
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1685.504 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1685.504 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+WARNING: [Place 30-781] Some instances may violate an exclude pblock as they constitute a macro with another instance that belongs to the exclude pblock.
+Exclude pblock: pcie_7x_0_main_pblock_boot
+Instance constrained to exclude pblock:
+    pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gt_wrapper_i/gtx_channel.gtxe2_channel_i
+Instance(s) not constrained to exclude pblock:
+    pci_exp_txp_OBUF[0]_inst
+    pci_exp_txn_OBUF[0]_inst
+    pci_exp_rxp_IBUF[0]_inst
+    pci_exp_rxn_IBUF[0]_inst
+
+WARNING: [Place 30-781] Some instances may violate an exclude pblock as they constitute a macro with another instance that belongs to the exclude pblock.
+Exclude pblock: pcie_7x_0_main_pblock_boot
+Instance constrained to exclude pblock:
+    pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[1].gt_wrapper_i/gtx_channel.gtxe2_channel_i
+Instance(s) not constrained to exclude pblock:
+    pci_exp_txn_OBUF[1]_inst
+    pci_exp_txp_OBUF[1]_inst
+    pci_exp_rxp_IBUF[1]_inst
+    pci_exp_rxn_IBUF[1]_inst
+
+WARNING: [Place 30-781] Some instances may violate an exclude pblock as they constitute a macro with another instance that belongs to the exclude pblock.
+Exclude pblock: pcie_7x_0_main_pblock_boot
+Instance constrained to exclude pblock:
+    pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[2].gt_wrapper_i/gtx_channel.gtxe2_channel_i
+Instance(s) not constrained to exclude pblock:
+    pci_exp_rxp_IBUF[2]_inst
+    pci_exp_txn_OBUF[2]_inst
+    pci_exp_rxn_IBUF[2]_inst
+    pci_exp_txp_OBUF[2]_inst
+
+WARNING: [Place 30-781] Some instances may violate an exclude pblock as they constitute a macro with another instance that belongs to the exclude pblock.
+Exclude pblock: pcie_7x_0_main_pblock_boot
+Instance constrained to exclude pblock:
+    pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[3].gt_wrapper_i/gtx_channel.gtxe2_channel_i
+Instance(s) not constrained to exclude pblock:
+    pci_exp_rxp_IBUF[3]_inst
+    pci_exp_txn_OBUF[3]_inst
+    pci_exp_rxn_IBUF[3]_inst
+    pci_exp_txp_OBUF[3]_inst
+
+WARNING: [Place 30-781] Some instances may violate an exclude pblock as they constitute a macro with another instance that belongs to the exclude pblock.
+Exclude pblock: pcie_7x_0_main_pblock_boot
+Instance constrained to exclude pblock:
+    pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[4].gt_wrapper_i/gtx_channel.gtxe2_channel_i
+Instance(s) not constrained to exclude pblock:
+    pci_exp_txp_OBUF[4]_inst
+    pci_exp_rxp_IBUF[4]_inst
+    pci_exp_rxn_IBUF[4]_inst
+    pci_exp_txn_OBUF[4]_inst
+
+WARNING: [Place 30-781] Some instances may violate an exclude pblock as they constitute a macro with another instance that belongs to the exclude pblock.
+Exclude pblock: pcie_7x_0_main_pblock_boot
+Instance constrained to exclude pblock:
+    pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[5].gt_wrapper_i/gtx_channel.gtxe2_channel_i
+Instance(s) not constrained to exclude pblock:
+    pci_exp_txn_OBUF[5]_inst
+    pci_exp_txp_OBUF[5]_inst
+    pci_exp_rxp_IBUF[5]_inst
+    pci_exp_rxn_IBUF[5]_inst
+
+WARNING: [Place 30-781] Some instances may violate an exclude pblock as they constitute a macro with another instance that belongs to the exclude pblock.
+Exclude pblock: pcie_7x_0_main_pblock_boot
+Instance constrained to exclude pblock:
+    pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[6].gt_wrapper_i/gtx_channel.gtxe2_channel_i
+Instance(s) not constrained to exclude pblock:
+    pci_exp_rxp_IBUF[6]_inst
+    pci_exp_txp_OBUF[6]_inst
+    pci_exp_rxn_IBUF[6]_inst
+    pci_exp_txn_OBUF[6]_inst
+
+WARNING: [Place 30-781] Some instances may violate an exclude pblock as they constitute a macro with another instance that belongs to the exclude pblock.
+Exclude pblock: pcie_7x_0_main_pblock_boot
+Instance constrained to exclude pblock:
+    pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[7].gt_wrapper_i/gtx_channel.gtxe2_channel_i
+Instance(s) not constrained to exclude pblock:
+    pci_exp_txn_OBUF[7]_inst
+    pci_exp_rxp_IBUF[7]_inst
+    pci_exp_txp_OBUF[7]_inst
+    pci_exp_rxn_IBUF[7]_inst
+
+WARNING: [Place 30-781] Some instances may violate an exclude pblock as they constitute a macro with another instance that belongs to the exclude pblock.
+Exclude pblock: refclk_ibuf_pblock_boot
+Instance constrained to exclude pblock:
+    refclk_ibuf
+Instance(s) not constrained to exclude pblock:
+    sys_clk_p_IBUF_inst
+    sys_clk_n_IBUF_inst
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 9218f3d9
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1685.504 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1701e3a96
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1685.504 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1701e3a96
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1685.504 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1701e3a96
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1685.504 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: b2eb3d6d
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1685.504 ; gain = 0.000
+
+Phase 2.2 Physical Synthesis In Placer
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1685.504 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Very High Fanout              |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                 |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  HD Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                         |            0  |              0  |                     0  |           0  |           2  |  00:00:00  |
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2 Physical Synthesis In Placer | Checksum: 1530c6371
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 1685.504 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 8e176afd
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1685.504 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 8e176afd
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1685.504 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 14962f0f0
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 1685.504 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 14163e810
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1685.504 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 15a444aaf
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1685.504 ; gain = 0.000
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 86e23415
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 1685.504 ; gain = 0.000
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: cf15e13a
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 1685.504 ; gain = 0.000
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: e7f642db
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 1685.504 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: e7f642db
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:18 . Memory (MB): peak = 1685.504 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 16eafe58f
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-33] Processed net pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_reset.pipe_reset_i/cpllreset, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-46] BUFG insertion identified 1 candidate nets, 0 success, 0 bufg driver replicated, 1 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason
+Phase 4.1.1.1 BUFG Insertion | Checksum: 16eafe58f
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 1685.504 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.508. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: d2e993f8
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:21 . Memory (MB): peak = 1685.504 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: d2e993f8
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:21 . Memory (MB): peak = 1685.504 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: d2e993f8
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:21 . Memory (MB): peak = 1685.504 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: d2e993f8
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:21 . Memory (MB): peak = 1685.504 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1685.504 ; gain = 0.000
+Phase 4.4 Final Placement Cleanup | Checksum: cb012a32
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:21 . Memory (MB): peak = 1685.504 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: cb012a32
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:21 . Memory (MB): peak = 1685.504 ; gain = 0.000
+Ending Placer Task | Checksum: b546ca30
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:21 . Memory (MB): peak = 1685.504 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+67 Infos, 11 Warnings, 1 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:23 . Memory (MB): peak = 1685.504 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1685.504 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1685.504 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.603 . Memory (MB): peak = 1685.504 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Documents/FPGA-Miner/xilinx-study/pci-e/pg054/pcie_ex2-tendomprom/pcie_7x_0_ex/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file xilinx_pcie_2_1_ep_7x_io_placed.rpt
+report_io: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.098 . Memory (MB): peak = 1685.504 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file xilinx_pcie_2_1_ep_7x_utilization_placed.rpt -pb xilinx_pcie_2_1_ep_7x_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file xilinx_pcie_2_1_ep_7x_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1685.504 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k410t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k410t'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC CFGBVS-11] CONFIG_VOLTAGE with HR Config Banks: Unable to determine configuration voltage for configuration Bank 14. When multi-function configuration banks are being used for configuration Vivado must be able to determine the configuration voltage to be used. Using PERSIST or EMCCLK implies that a multi-function configuration bank is being used. If this is not the case, please do not use these settings. Otherwise, if the bank is being used for configuration, please use set_property CONFIG_VOLTAGE [current_design] to indicate the voltage to be used.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 1fb0e9a8 ConstDB: 0 ShapeSum: 9595e088 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 1dd3bb36a
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:40 . Memory (MB): peak = 1925.730 ; gain = 240.227
+Post Restoration Checksum: NetGraph: a1ed337d NumContArr: 862b0e4f Constraints: b523719e Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 1dd3bb36a
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:40 . Memory (MB): peak = 1948.660 ; gain = 263.156
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 1dd3bb36a
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:41 . Memory (MB): peak = 1957.305 ; gain = 271.801
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 1dd3bb36a
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:41 . Memory (MB): peak = 1957.305 ; gain = 271.801
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 26ee3c774
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:44 . Memory (MB): peak = 2000.500 ; gain = 314.996
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.501  | TNS=0.000  | WHS=-0.504 | THS=-438.533|
+
+Phase 2 Router Initialization | Checksum: f04e6547
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:44 . Memory (MB): peak = 2000.500 ; gain = 314.996
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 23b8cf376
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:51 . Memory (MB): peak = 2000.500 ; gain = 314.996
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 701
+ Number of Nodes with overlaps = 63
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.428  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 24a2e9ce9
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:57 . Memory (MB): peak = 2000.500 ; gain = 314.996
+Phase 4 Rip-up And Reroute | Checksum: 24a2e9ce9
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:57 . Memory (MB): peak = 2000.500 ; gain = 314.996
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 24a2e9ce9
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:57 . Memory (MB): peak = 2000.500 ; gain = 314.996
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 24a2e9ce9
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:57 . Memory (MB): peak = 2000.500 ; gain = 314.996
+Phase 5 Delay and Skew Optimization | Checksum: 24a2e9ce9
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:57 . Memory (MB): peak = 2000.500 ; gain = 314.996
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 2607e3788
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:58 . Memory (MB): peak = 2000.500 ; gain = 314.996
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.514  | TNS=0.000  | WHS=0.031  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1a7d58165
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:58 . Memory (MB): peak = 2000.500 ; gain = 314.996
+Phase 6 Post Hold Fix | Checksum: 1a7d58165
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:58 . Memory (MB): peak = 2000.500 ; gain = 314.996
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.417764 %
+  Global Horizontal Routing Utilization  = 0.323954 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 26e2474b3
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:00:58 . Memory (MB): peak = 2000.500 ; gain = 314.996
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 26e2474b3
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:00:58 . Memory (MB): peak = 2000.500 ; gain = 314.996
+
+Phase 9 Depositing Routes
+INFO: [Route 35-467] Router swapped GT pin pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gt_wrapper_i/gtx_channel.gtxe2_channel_i/GTREFCLK0 to physical pin GTXE2_CHANNEL_X0Y7/GTNORTHREFCLK0
+INFO: [Route 35-467] Router swapped GT pin pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_quad.gt_common_enabled.gt_common_int.gt_common_i/qpll_wrapper_i/gtx_common.gtxe2_common_i/GTREFCLK0 to physical pin GTXE2_COMMON_X0Y1/GTNORTHREFCLK0
+INFO: [Route 35-467] Router swapped GT pin pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[1].gt_wrapper_i/gtx_channel.gtxe2_channel_i/GTREFCLK0 to physical pin GTXE2_CHANNEL_X0Y6/GTNORTHREFCLK0
+INFO: [Route 35-467] Router swapped GT pin pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[2].gt_wrapper_i/gtx_channel.gtxe2_channel_i/GTREFCLK0 to physical pin GTXE2_CHANNEL_X0Y5/GTNORTHREFCLK0
+INFO: [Route 35-467] Router swapped GT pin pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[3].gt_wrapper_i/gtx_channel.gtxe2_channel_i/GTREFCLK0 to physical pin GTXE2_CHANNEL_X0Y4/GTNORTHREFCLK0
+INFO: [Route 35-467] Router swapped GT pin pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[4].gt_wrapper_i/gtx_channel.gtxe2_channel_i/GTREFCLK0 to physical pin GTXE2_CHANNEL_X0Y3/GTREFCLK1
+INFO: [Route 35-467] Router swapped GT pin pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[4].pipe_quad.gt_common_enabled.gt_common_int.gt_common_i/qpll_wrapper_i/gtx_common.gtxe2_common_i/GTREFCLK0 to physical pin GTXE2_COMMON_X0Y0/GTREFCLK1
+INFO: [Route 35-467] Router swapped GT pin pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[5].gt_wrapper_i/gtx_channel.gtxe2_channel_i/GTREFCLK0 to physical pin GTXE2_CHANNEL_X0Y2/GTREFCLK1
+INFO: [Route 35-467] Router swapped GT pin pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[6].gt_wrapper_i/gtx_channel.gtxe2_channel_i/GTREFCLK0 to physical pin GTXE2_CHANNEL_X0Y1/GTREFCLK1
+INFO: [Route 35-467] Router swapped GT pin pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[7].gt_wrapper_i/gtx_channel.gtxe2_channel_i/GTREFCLK0 to physical pin GTXE2_CHANNEL_X0Y0/GTREFCLK1
+Phase 9 Depositing Routes | Checksum: 29f61588a
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:00:59 . Memory (MB): peak = 2000.500 ; gain = 314.996
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.514  | TNS=0.000  | WHS=0.031  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 29f61588a
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:00:59 . Memory (MB): peak = 2000.500 ; gain = 314.996
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:42 ; elapsed = 00:01:16 . Memory (MB): peak = 2000.500 ; gain = 314.996
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+94 Infos, 12 Warnings, 1 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:45 ; elapsed = 00:01:18 . Memory (MB): peak = 2000.500 ; gain = 314.996
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2000.500 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2000.500 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.784 . Memory (MB): peak = 2000.500 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Documents/FPGA-Miner/xilinx-study/pci-e/pg054/pcie_ex2-tendomprom/pcie_7x_0_ex/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file xilinx_pcie_2_1_ep_7x_drc_routed.rpt -pb xilinx_pcie_2_1_ep_7x_drc_routed.pb -rpx xilinx_pcie_2_1_ep_7x_drc_routed.rpx
+Command: report_drc -file xilinx_pcie_2_1_ep_7x_drc_routed.rpt -pb xilinx_pcie_2_1_ep_7x_drc_routed.pb -rpx xilinx_pcie_2_1_ep_7x_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/Documents/FPGA-Miner/xilinx-study/pci-e/pg054/pcie_ex2-tendomprom/pcie_7x_0_ex/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file xilinx_pcie_2_1_ep_7x_methodology_drc_routed.rpt -pb xilinx_pcie_2_1_ep_7x_methodology_drc_routed.pb -rpx xilinx_pcie_2_1_ep_7x_methodology_drc_routed.rpx
+Command: report_methodology -file xilinx_pcie_2_1_ep_7x_methodology_drc_routed.rpt -pb xilinx_pcie_2_1_ep_7x_methodology_drc_routed.pb -rpx xilinx_pcie_2_1_ep_7x_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file D:/Documents/FPGA-Miner/xilinx-study/pci-e/pg054/pcie_ex2-tendomprom/pcie_7x_0_ex/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file xilinx_pcie_2_1_ep_7x_power_routed.rpt -pb xilinx_pcie_2_1_ep_7x_power_summary_routed.pb -rpx xilinx_pcie_2_1_ep_7x_power_routed.rpx
+Command: report_power -file xilinx_pcie_2_1_ep_7x_power_routed.rpt -pb xilinx_pcie_2_1_ep_7x_power_summary_routed.pb -rpx xilinx_pcie_2_1_ep_7x_power_routed.rpx
+INFO: [Power 33-23] Power model is not available for startup_inst
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+107 Infos, 13 Warnings, 1 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file xilinx_pcie_2_1_ep_7x_route_status.rpt -pb xilinx_pcie_2_1_ep_7x_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file xilinx_pcie_2_1_ep_7x_timing_summary_routed.rpt -pb xilinx_pcie_2_1_ep_7x_timing_summary_routed.pb -rpx xilinx_pcie_2_1_ep_7x_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file xilinx_pcie_2_1_ep_7x_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file xilinx_pcie_2_1_ep_7x_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file xilinx_pcie_2_1_ep_7x_bus_skew_routed.rpt -pb xilinx_pcie_2_1_ep_7x_bus_skew_routed.pb -rpx xilinx_pcie_2_1_ep_7x_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+Command: write_bitstream -force xilinx_pcie_2_1_ep_7x.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k410t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k410t'
+Parsing TCL File [d:/Documents/FPGA-Miner/xilinx-study/pci-e/pg054/pcie_ex2-tendomprom/pcie_7x_0_ex/pcie_7x_0_ex.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_create_bitstreams.tcl] from IP D:/Documents/FPGA-Miner/xilinx-study/pci-e/pg054/pcie_ex2-tendomprom/pcie_7x_0_ex/pcie_7x_0_ex.srcs/sources_1/ip/pcie_7x_0/pcie_7x_0.xci
+Sourcing Tcl File [d:/Documents/FPGA-Miner/xilinx-study/pci-e/pg054/pcie_ex2-tendomprom/pcie_7x_0_ex/pcie_7x_0_ex.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_create_bitstreams.tcl]
+Finished Sourcing Tcl File [d:/Documents/FPGA-Miner/xilinx-study/pci-e/pg054/pcie_ex2-tendomprom/pcie_7x_0_ex/pcie_7x_0_ex.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_create_bitstreams.tcl]
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC CFGBVS-1] Missing CFGBVS and CONFIG_VOLTAGE Design Properties: Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+WARNING: [DRC CFGBVS-11] CONFIG_VOLTAGE with HR Config Banks: Unable to determine configuration voltage for configuration Bank 14. When multi-function configuration banks are being used for configuration Vivado must be able to determine the configuration voltage to be used. Using PERSIST or EMCCLK implies that a multi-function configuration bank is being used. If this is not the case, please do not use these settings. Otherwise, if the bank is being used for configuration, please use set_property CONFIG_VOLTAGE [current_design] to indicate the voltage to be used.
+WARNING: [DRC FLBA-1] Area group tile alignment: sys_clk_n_IBUF_inst_pblock_boot area group IPAD_X1Y11:IPAD_X1Y11 doesn't align with tile
+WARNING: [DRC FLBA-1] Area group tile alignment: sys_clk_p_IBUF_inst_pblock_boot area group IPAD_X1Y10:IPAD_X1Y10 doesn't align with tile
+WARNING: [DRC FLBO-1] Pblock overlap: pcie_7x_0_main_pblock_boot overlaps with refclk_ibuf_pblock_boot, sys_clk_p_IBUF_inst_pblock_boot, and sys_clk_n_IBUF_inst_pblock_boot :  0.22%  0.22%  0.22% .
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 5 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+INFO: [Designutils 12-2358] Enabled Tandem boot bitstream.
+Creating bitmap...
+Creating bitstream...
+Tandem stage1 bitstream contains 5945952 bits.
+Tandem stage2 bitstream contains 8421856 bits.
+Writing bitstream ./xilinx_pcie_2_1_ep_7x.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+126 Infos, 18 Warnings, 1 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:37 ; elapsed = 00:00:32 . Memory (MB): peak = 2598.457 ; gain = 587.277
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 15 13:21:01 2019...

@@ -1,0 +1,167 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date             : Fri Feb 15 13:20:27 2019
+| Host             : vr-2 running 64-bit major release  (build 9200)
+| Command          : report_power -file xilinx_pcie_2_1_ep_7x_power_routed.rpt -pb xilinx_pcie_2_1_ep_7x_power_summary_routed.pb -rpx xilinx_pcie_2_1_ep_7x_power_routed.rpx
+| Design           : xilinx_pcie_2_1_ep_7x
+| Device           : xc7k410tffg900-2
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 2.588        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 2.370        |
+| Device Static (W)        | 0.218        |
+| Effective TJA (C/W)      | 1.8          |
+| Max Ambient (C)          | 80.4         |
+| Junction Temperature (C) | 29.6         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++-------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
++-------------------------+-----------+----------+-----------+-----------------+
+| Clocks                  |     0.037 |        9 |       --- |             --- |
+| Slice Logic             |     0.007 |     8410 |       --- |             --- |
+|   LUT as Logic          |     0.006 |     3076 |    254200 |            1.21 |
+|   Register              |    <0.001 |     4426 |    508400 |            0.87 |
+|   CARRY4                |    <0.001 |      102 |     63550 |            0.16 |
+|   F7/F8 Muxes           |    <0.001 |       80 |    254200 |            0.03 |
+|   Others                |     0.000 |      231 |       --- |             --- |
+|   LUT as Shift Register |     0.000 |       56 |     90600 |            0.06 |
+| Signals                 |     0.016 |     7526 |       --- |             --- |
+| Block RAM               |     0.050 |       12 |       795 |            1.51 |
+| MMCM                    |     0.108 |        1 |        10 |           10.00 |
+| I/O                     |     0.000 |        1 |       493 |            0.20 |
+| GTX                     |     2.108 |        8 |        16 |           50.00 |
+| Hard IPs                |     0.045 |        1 |       --- |             --- |
+|   PCIE                  |     0.045 |        1 |         1 |          100.00 |
+| Static Power            |     0.218 |          |           |                 |
+| Total                   |     2.588 |          |           |                 |
++-------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     0.409 |       0.302 |      0.107 |
+| Vccaux    |       1.800 |     0.092 |       0.059 |      0.033 |
+| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.007 |       0.004 |      0.003 |
+| MGTAVcc   |       1.000 |     1.021 |       1.016 |      0.005 |
+| MGTAVtt   |       1.200 |     0.759 |       0.754 |      0.005 |
+| MGTVccaux |       1.800 |     0.021 |       0.021 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                           |                                                                                                            |
+|                             |            |                                                        |                                                                                                            |
+| Overall confidence level    | Low        |                                                        |                                                                                                            |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 1.8                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 3.3                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++--------------------+---------------------------------------------------------------------------------------------------------------+-----------------+
+| Clock              | Domain                                                                                                        | Constraint (ns) |
++--------------------+---------------------------------------------------------------------------------------------------------------+-----------------+
+| clk_125mhz         | pcie_7x_0_support_i/pipe_clock_i/clk_125mhz                                                                   |             8.0 |
+| clk_250mhz         | pcie_7x_0_support_i/pipe_clock_i/clk_250mhz                                                                   |             4.0 |
+| mmcm_fb            | pcie_7x_0_support_i/pipe_clock_i/mmcm_fb                                                                      |            10.0 |
+| startupEosClk_x0y0 | pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pcie_7x_0_fast_cfg_init_cntr_i/startup_eos                          |          1000.0 |
+| sys_clk            | sys_clk_p                                                                                                     |            10.0 |
+| txoutclk_x0y0      | pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gt_wrapper_i/pipe_txoutclk_out |            10.0 |
+| userclk1           | pcie_7x_0_support_i/pipe_clock_i/userclk1                                                                     |             4.0 |
++--------------------+---------------------------------------------------------------------------------------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++-----------------------+-----------+
+| Name                  | Power (W) |
++-----------------------+-----------+
+| xilinx_pcie_2_1_ep_7x |     2.370 |
+|   app                 |     0.016 |
+|     PIO               |     0.016 |
+|       PIO_EP_inst     |     0.016 |
+|   pcie_7x_0_support_i |     2.354 |
+|     pcie_7x_0_i       |     2.245 |
+|       inst            |     2.245 |
+|     pipe_clock_i      |     0.109 |
++-----------------------+-----------+
+
+

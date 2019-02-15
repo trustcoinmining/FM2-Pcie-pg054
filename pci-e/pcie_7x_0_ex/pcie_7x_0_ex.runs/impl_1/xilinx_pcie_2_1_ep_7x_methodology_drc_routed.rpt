@@ -1,0 +1,56 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Feb 15 18:59:44 2019
+| Host         : vr-2 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file xilinx_pcie_2_1_ep_7x_methodology_drc_routed.rpt -pb xilinx_pcie_2_1_ep_7x_methodology_drc_routed.pb -rpx xilinx_pcie_2_1_ep_7x_methodology_drc_routed.rpx
+| Design       : xilinx_pcie_2_1_ep_7x
+| Device       : xc7k410tffg900-2
+| Speed File   : -2
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 4
++----------+----------+------------------------------+------------+
+| Rule     | Severity | Description                  | Violations |
++----------+----------+------------------------------+------------+
+| LUTAR-1  | Warning  | LUT drives async reset alert | 3          |
+| TIMING-9 | Warning  | Unknown CDC Logic            | 1          |
++----------+----------+------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].rrst_inst/ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]/PRE, pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[1]/PRE, pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.rd_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gwrrd_rst_sync_stage[2].wrst_inst/ngwrdrst.grst.g7serrst.wr_rst_reg[2]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[0]/PRE, pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/PRE, pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#3 Warning
+LUT drives async reset alert  
+LUT cell pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/user_reset_out_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/user_reset_int_reg/PRE, pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/user_reset_out_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-9#1 Warning
+Unknown CDC Logic  
+One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+

@@ -1,0 +1,14 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               16M
+Start Address      0x00000000
+End Address        0x00FFFFFF
+Checksum           0xE51831EA
+Fill Value         0xFF
+
+Addr1         Addr2         Date                    File(s)                                                                                                                                 Checksum
+0x00000000    0x001B6787    Feb 15 13:21:00 2019    D:/Documents/FPGA-Miner/xilinx-study/pci-e/pg054/pcie_ex2-tendomprom/pcie_7x_0_ex/pcie_7x_0_ex.runs/impl_1/xilinx_pcie_2_1_ep_7x.bit    0x01645262
+File Checksum Total                                                                                                                                                                         0x01645262

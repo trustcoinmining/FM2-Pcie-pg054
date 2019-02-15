@@ -1,0 +1,11 @@
+ set mytiles [get_tiles { \
+ HCLK_IOB_X0Y286 \
+ HCLK_IOI3_X1Y286 \
+ HCLK_L_X4Y286 \
+ LIOB33_SING_X0Y250 \
+ LIOI3_SING_X0Y250 \
+ L_TERM_INT_X2Y261 \
+ IO_INT_INTERFACE_L_X0Y250 \
+ INT_L_X0Y250 \
+}] 
+select_objects -add $mytiles 

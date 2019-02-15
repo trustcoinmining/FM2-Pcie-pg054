@@ -1,0 +1,260 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Feb 15 18:59:48 2019
+| Host         : vr-2 running 64-bit major release  (build 9200)
+| Command      : report_bus_skew -warn_on_violation -file xilinx_pcie_2_1_ep_7x_bus_skew_routed.rpt -pb xilinx_pcie_2_1_ep_7x_bus_skew_routed.pb -rpx xilinx_pcie_2_1_ep_7x_bus_skew_routed.rpx
+| Design       : xilinx_pcie_2_1_ep_7x
+| Device       : 7k410t-ffg900
+| Speed File   : -2  PRODUCTION 1.12 2017-02-17
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+Table of Contents
+-----------------
+1. Bus Skew Report Summary
+2. Bus Skew Report Per Constraint
+
+1. Bus Skew Report Summary
+--------------------------
+
+Id  Position  From                            To                              Corner  Requirement(ns)  Actual(ns)  Slack(ns)
+--  --------  ------------------------------  ------------------------------  ------  ---------------  ----------  ---------
+1   30        [get_cells [list {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.rd_pntr_gc_reg[0]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.rd_pntr_gc_reg[1]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.rd_pntr_gc_reg[2]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.rd_pntr_gc_reg[3]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.rd_pntr_gc_reg[4]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.rd_pntr_gc_reg[5]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.rd_pntr_gc_reg[6]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.rd_pntr_gc_reg[7]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.rd_pntr_gc_reg[8]}]]
+                                              [get_cells [list {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].wr_stg_inst/Q_reg_reg[0]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].wr_stg_inst/Q_reg_reg[1]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].wr_stg_inst/Q_reg_reg[2]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].wr_stg_inst/Q_reg_reg[3]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].wr_stg_inst/Q_reg_reg[4]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].wr_stg_inst/Q_reg_reg[5]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].wr_stg_inst/Q_reg_reg[6]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].wr_stg_inst/Q_reg_reg[7]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].wr_stg_inst/Q_reg_reg[8]}]]
+                                                                              Slow              4.000       0.780      3.220
+2   32        [get_cells [list {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.wr_pntr_gc_reg[0]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.wr_pntr_gc_reg[1]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.wr_pntr_gc_reg[2]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.wr_pntr_gc_reg[3]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.wr_pntr_gc_reg[4]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.wr_pntr_gc_reg[5]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.wr_pntr_gc_reg[6]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.wr_pntr_gc_reg[7]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.wr_pntr_gc_reg[8]}]]
+                                              [get_cells [list {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].rd_stg_inst/Q_reg_reg[0]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].rd_stg_inst/Q_reg_reg[1]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].rd_stg_inst/Q_reg_reg[2]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].rd_stg_inst/Q_reg_reg[3]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].rd_stg_inst/Q_reg_reg[4]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].rd_stg_inst/Q_reg_reg[5]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].rd_stg_inst/Q_reg_reg[6]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].rd_stg_inst/Q_reg_reg[7]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].rd_stg_inst/Q_reg_reg[8]}]]
+                                                                              Slow              4.000       0.675      3.325
+
+
+2. Bus Skew Report Per Constraint
+---------------------------------
+
+Id: 1
+set_bus_skew -from [get_cells [list {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.rd_pntr_gc_reg[0]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.rd_pntr_gc_reg[1]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.rd_pntr_gc_reg[2]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.rd_pntr_gc_reg[3]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.rd_pntr_gc_reg[4]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.rd_pntr_gc_reg[5]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.rd_pntr_gc_reg[6]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.rd_pntr_gc_reg[7]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.rd_pntr_gc_reg[8]}]] -to [get_cells [list {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].wr_stg_inst/Q_reg_reg[0]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].wr_stg_inst/Q_reg_reg[1]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].wr_stg_inst/Q_reg_reg[2]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].wr_stg_inst/Q_reg_reg[3]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].wr_stg_inst/Q_reg_reg[4]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].wr_stg_inst/Q_reg_reg[5]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].wr_stg_inst/Q_reg_reg[6]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].wr_stg_inst/Q_reg_reg[7]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].wr_stg_inst/Q_reg_reg[8]}]] 4.000
+Requirement: 4.000ns
+Endpoints: 9
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk_100mhz            userclk2              pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].wr_stg_inst/Q_reg_reg[0]/D
+                                                                            pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].wr_stg_inst/Q_reg_reg[5]/D
+                                                                                                            Slow         0.780      3.220
+
+
+Slack (MET) :             3.220ns  (requirement - actual skew)
+  Endpoint Source:        pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.rd_pntr_gc_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clk_100mhz)
+  Endpoint Destination:   pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].wr_stg_inst/Q_reg_reg[0]/D
+                            (rising edge-triggered cell FDCE clocked by userclk2)
+  Reference Source:       pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.rd_pntr_gc_reg[5]/C
+                            (rising edge-triggered cell FDCE clocked by clk_100mhz)
+  Reference Destination:  pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].wr_stg_inst/Q_reg_reg[5]/D
+                            (rising edge-triggered cell FDCE clocked by userclk2)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            4.000ns
+  Endpoint Relative Delay:    1.031ns
+  Reference Relative Delay:  -0.022ns
+  Relative CRPR:              0.467ns
+  Uncertainty:                0.194ns
+  Actual Bus Skew:            0.780ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_100mhz rise edge)
+                                                      0.000     0.000 r  
+    GTXE2_CHANNEL_X0Y7   GTXE2_CHANNEL                0.000     0.000 r  pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gt_wrapper_i/gtx_channel.gtxe2_channel_i/TXOUTCLK
+                         net (fo=1, routed)           0.936     0.936    pcie_7x_0_support_i/pipe_clock_i/pipe_txoutclk_out
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     1.029 r  pcie_7x_0_support_i/pipe_clock_i/txoutclk_i.txoutclk_i/O
+                         net (fo=1, routed)           1.492     2.521    pcie_7x_0_support_i/pipe_clock_i/refclk
+    MMCME2_ADV_X0Y3      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT5)
+                                                      0.077     2.598 r  pcie_7x_0_support_i/pipe_clock_i/mmcm_i/CLKOUT5
+                         net (fo=1, routed)           1.537     4.135    pcie_7x_0_support_i/lopt
+    BUFGCTRL_X0Y3        BUFG (Prop_bufg_I_O)         0.093     4.228 r  pcie_7x_0_support_i/icap_clock_bufg/O
+                         net (fo=174, routed)         1.300     5.528    pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_clk
+    SLICE_X157Y156       FDCE                                         r  pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.rd_pntr_gc_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X157Y156       FDCE (Prop_fdce_C_Q)         0.223     5.751 r  pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.rd_pntr_gc_reg[0]/Q
+                         net (fo=1, routed)           0.591     6.342    pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].wr_stg_inst/Q[0]
+    SLICE_X160Y154       FDCE                                         r  pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].wr_stg_inst/Q_reg_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock userclk2 rise edge)
+                                                      0.000     0.000 r  
+    GTXE2_CHANNEL_X0Y7   GTXE2_CHANNEL                0.000     0.000 r  pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gt_wrapper_i/gtx_channel.gtxe2_channel_i/TXOUTCLK
+                         net (fo=1, routed)           0.883     0.883    pcie_7x_0_support_i/pipe_clock_i/pipe_txoutclk_out
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083     0.966 r  pcie_7x_0_support_i/pipe_clock_i/txoutclk_i.txoutclk_i/O
+                         net (fo=1, routed)           1.335     2.301    pcie_7x_0_support_i/pipe_clock_i/refclk
+    MMCME2_ADV_X0Y3      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT3)
+                                                      0.073     2.374 r  pcie_7x_0_support_i/pipe_clock_i/mmcm_i/CLKOUT3
+                         net (fo=1, routed)           1.424     3.798    pcie_7x_0_support_i/pipe_clock_i/userclk2
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.083     3.881 r  pcie_7x_0_support_i/pipe_clock_i/userclk2_i1.usrclk2_i1/O
+                         net (fo=1091, routed)        1.213     5.094    pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].wr_stg_inst/wr_clk
+    SLICE_X160Y154       FDCE                                         r  pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].wr_stg_inst/Q_reg_reg[0]/C
+                         clock pessimism              0.224     5.318    
+    SLICE_X160Y154       FDCE (Setup_fdce_C_D)       -0.007     5.311    pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].wr_stg_inst/Q_reg_reg[0]
+  -------------------------------------------------------------------
+                         data arrival                           6.342    
+                         clock arrival                          5.311    
+  -------------------------------------------------------------------
+                         relative delay                         1.031    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_100mhz rise edge)
+                                                      0.000     0.000 r  
+    GTXE2_CHANNEL_X0Y7   GTXE2_CHANNEL                0.000     0.000 r  pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gt_wrapper_i/gtx_channel.gtxe2_channel_i/TXOUTCLK
+                         net (fo=1, routed)           0.883     0.883    pcie_7x_0_support_i/pipe_clock_i/pipe_txoutclk_out
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083     0.966 r  pcie_7x_0_support_i/pipe_clock_i/txoutclk_i.txoutclk_i/O
+                         net (fo=1, routed)           1.335     2.301    pcie_7x_0_support_i/pipe_clock_i/refclk
+    MMCME2_ADV_X0Y3      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT5)
+                                                      0.073     2.374 r  pcie_7x_0_support_i/pipe_clock_i/mmcm_i/CLKOUT5
+                         net (fo=1, routed)           1.424     3.798    pcie_7x_0_support_i/lopt
+    BUFGCTRL_X0Y3        BUFG (Prop_bufg_I_O)         0.083     3.881 r  pcie_7x_0_support_i/icap_clock_bufg/O
+                         net (fo=174, routed)         1.165     5.046    pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_clk
+    SLICE_X157Y156       FDCE                                         r  pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.rd_pntr_gc_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X157Y156       FDCE (Prop_fdce_C_Q)         0.162     5.208 r  pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.rd_pntr_gc_reg[5]/Q
+                         net (fo=1, routed)           0.163     5.371    pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].wr_stg_inst/Q[5]
+    SLICE_X156Y154       FDCE                                         r  pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].wr_stg_inst/Q_reg_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock userclk2 rise edge)
+                                                      0.000     0.000 r  
+    GTXE2_CHANNEL_X0Y7   GTXE2_CHANNEL                0.000     0.000 r  pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gt_wrapper_i/gtx_channel.gtxe2_channel_i/TXOUTCLK
+                         net (fo=1, routed)           0.936     0.936    pcie_7x_0_support_i/pipe_clock_i/pipe_txoutclk_out
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     1.029 r  pcie_7x_0_support_i/pipe_clock_i/txoutclk_i.txoutclk_i/O
+                         net (fo=1, routed)           1.492     2.521    pcie_7x_0_support_i/pipe_clock_i/refclk
+    MMCME2_ADV_X0Y3      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT3)
+                                                      0.077     2.598 r  pcie_7x_0_support_i/pipe_clock_i/mmcm_i/CLKOUT3
+                         net (fo=1, routed)           1.537     4.135    pcie_7x_0_support_i/pipe_clock_i/userclk2
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.093     4.228 r  pcie_7x_0_support_i/pipe_clock_i/userclk2_i1.usrclk2_i1/O
+                         net (fo=1091, routed)        1.301     5.529    pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].wr_stg_inst/wr_clk
+    SLICE_X156Y154       FDCE                                         r  pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].wr_stg_inst/Q_reg_reg[5]/C
+                         clock pessimism             -0.224     5.305    
+    SLICE_X156Y154       FDCE (Hold_fdce_C_D)         0.088     5.393    pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].wr_stg_inst/Q_reg_reg[5]
+  -------------------------------------------------------------------
+                         data arrival                           5.371    
+                         clock arrival                          5.393    
+  -------------------------------------------------------------------
+                         relative delay                        -0.022    
+
+
+
+Id: 2
+set_bus_skew -from [get_cells [list {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.wr_pntr_gc_reg[0]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.wr_pntr_gc_reg[1]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.wr_pntr_gc_reg[2]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.wr_pntr_gc_reg[3]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.wr_pntr_gc_reg[4]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.wr_pntr_gc_reg[5]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.wr_pntr_gc_reg[6]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.wr_pntr_gc_reg[7]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.wr_pntr_gc_reg[8]}]] -to [get_cells [list {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].rd_stg_inst/Q_reg_reg[0]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].rd_stg_inst/Q_reg_reg[1]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].rd_stg_inst/Q_reg_reg[2]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].rd_stg_inst/Q_reg_reg[3]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].rd_stg_inst/Q_reg_reg[4]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].rd_stg_inst/Q_reg_reg[5]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].rd_stg_inst/Q_reg_reg[6]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].rd_stg_inst/Q_reg_reg[7]} {pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].rd_stg_inst/Q_reg_reg[8]}]] 4.000
+Requirement: 4.000ns
+Endpoints: 9
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+userclk2              clk_100mhz            pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].rd_stg_inst/Q_reg_reg[7]/D
+                                                                            pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].rd_stg_inst/Q_reg_reg[2]/D
+                                                                                                            Slow         0.675      3.325
+
+
+Slack (MET) :             3.325ns  (requirement - actual skew)
+  Endpoint Source:        pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.wr_pntr_gc_reg[7]/C
+                            (rising edge-triggered cell FDCE clocked by userclk2)
+  Endpoint Destination:   pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].rd_stg_inst/Q_reg_reg[7]/D
+                            (rising edge-triggered cell FDCE clocked by clk_100mhz)
+  Reference Source:       pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.wr_pntr_gc_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by userclk2)
+  Reference Destination:  pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].rd_stg_inst/Q_reg_reg[2]/D
+                            (rising edge-triggered cell FDCE clocked by clk_100mhz)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            4.000ns
+  Endpoint Relative Delay:    1.004ns
+  Reference Relative Delay:   0.056ns
+  Relative CRPR:              0.467ns
+  Uncertainty:                0.194ns
+  Actual Bus Skew:            0.675ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR + Uncertainty)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock userclk2 rise edge)
+                                                      0.000     0.000 r  
+    GTXE2_CHANNEL_X0Y7   GTXE2_CHANNEL                0.000     0.000 r  pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gt_wrapper_i/gtx_channel.gtxe2_channel_i/TXOUTCLK
+                         net (fo=1, routed)           0.936     0.936    pcie_7x_0_support_i/pipe_clock_i/pipe_txoutclk_out
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     1.029 r  pcie_7x_0_support_i/pipe_clock_i/txoutclk_i.txoutclk_i/O
+                         net (fo=1, routed)           1.492     2.521    pcie_7x_0_support_i/pipe_clock_i/refclk
+    MMCME2_ADV_X0Y3      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT3)
+                                                      0.077     2.598 r  pcie_7x_0_support_i/pipe_clock_i/mmcm_i/CLKOUT3
+                         net (fo=1, routed)           1.537     4.135    pcie_7x_0_support_i/pipe_clock_i/userclk2
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.093     4.228 r  pcie_7x_0_support_i/pipe_clock_i/userclk2_i1.usrclk2_i1/O
+                         net (fo=1091, routed)        1.348     5.576    pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_clk
+    SLICE_X159Y155       FDCE                                         r  pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.wr_pntr_gc_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X159Y155       FDCE (Prop_fdce_C_Q)         0.204     5.780 r  pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.wr_pntr_gc_reg[7]/Q
+                         net (fo=1, routed)           0.404     6.184    pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].rd_stg_inst/Q[7]
+    SLICE_X157Y155       FDCE                                         r  pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].rd_stg_inst/Q_reg_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_100mhz rise edge)
+                                                      0.000     0.000 r  
+    GTXE2_CHANNEL_X0Y7   GTXE2_CHANNEL                0.000     0.000 r  pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gt_wrapper_i/gtx_channel.gtxe2_channel_i/TXOUTCLK
+                         net (fo=1, routed)           0.883     0.883    pcie_7x_0_support_i/pipe_clock_i/pipe_txoutclk_out
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083     0.966 r  pcie_7x_0_support_i/pipe_clock_i/txoutclk_i.txoutclk_i/O
+                         net (fo=1, routed)           1.335     2.301    pcie_7x_0_support_i/pipe_clock_i/refclk
+    MMCME2_ADV_X0Y3      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT5)
+                                                      0.073     2.374 r  pcie_7x_0_support_i/pipe_clock_i/mmcm_i/CLKOUT5
+                         net (fo=1, routed)           1.424     3.798    pcie_7x_0_support_i/lopt
+    BUFGCTRL_X0Y3        BUFG (Prop_bufg_I_O)         0.083     3.881 r  pcie_7x_0_support_i/icap_clock_bufg/O
+                         net (fo=174, routed)         1.166     5.047    pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].rd_stg_inst/rd_clk
+    SLICE_X157Y155       FDCE                                         r  pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].rd_stg_inst/Q_reg_reg[7]/C
+                         clock pessimism              0.224     5.271    
+    SLICE_X157Y155       FDCE (Setup_fdce_C_D)       -0.091     5.180    pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].rd_stg_inst/Q_reg_reg[7]
+  -------------------------------------------------------------------
+                         data arrival                           6.184    
+                         clock arrival                          5.180    
+  -------------------------------------------------------------------
+                         relative delay                         1.004    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock userclk2 rise edge)
+                                                      0.000     0.000 r  
+    GTXE2_CHANNEL_X0Y7   GTXE2_CHANNEL                0.000     0.000 r  pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gt_wrapper_i/gtx_channel.gtxe2_channel_i/TXOUTCLK
+                         net (fo=1, routed)           0.883     0.883    pcie_7x_0_support_i/pipe_clock_i/pipe_txoutclk_out
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.083     0.966 r  pcie_7x_0_support_i/pipe_clock_i/txoutclk_i.txoutclk_i/O
+                         net (fo=1, routed)           1.335     2.301    pcie_7x_0_support_i/pipe_clock_i/refclk
+    MMCME2_ADV_X0Y3      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT3)
+                                                      0.073     2.374 r  pcie_7x_0_support_i/pipe_clock_i/mmcm_i/CLKOUT3
+                         net (fo=1, routed)           1.424     3.798    pcie_7x_0_support_i/pipe_clock_i/userclk2
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.083     3.881 r  pcie_7x_0_support_i/pipe_clock_i/userclk2_i1.usrclk2_i1/O
+                         net (fo=1091, routed)        1.211     5.092    pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_clk
+    SLICE_X159Y156       FDCE                                         r  pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.wr_pntr_gc_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X159Y156       FDCE (Prop_fdce_C_Q)         0.178     5.270 r  pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.wr_pntr_gc_reg[2]/Q
+                         net (fo=1, routed)           0.208     5.478    pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].rd_stg_inst/Q[2]
+    SLICE_X157Y156       FDCE                                         r  pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].rd_stg_inst/Q_reg_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_100mhz rise edge)
+                                                      0.000     0.000 r  
+    GTXE2_CHANNEL_X0Y7   GTXE2_CHANNEL                0.000     0.000 r  pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gt_wrapper_i/gtx_channel.gtxe2_channel_i/TXOUTCLK
+                         net (fo=1, routed)           0.936     0.936    pcie_7x_0_support_i/pipe_clock_i/pipe_txoutclk_out
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.093     1.029 r  pcie_7x_0_support_i/pipe_clock_i/txoutclk_i.txoutclk_i/O
+                         net (fo=1, routed)           1.492     2.521    pcie_7x_0_support_i/pipe_clock_i/refclk
+    MMCME2_ADV_X0Y3      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT5)
+                                                      0.077     2.598 r  pcie_7x_0_support_i/pipe_clock_i/mmcm_i/CLKOUT5
+                         net (fo=1, routed)           1.537     4.135    pcie_7x_0_support_i/lopt
+    BUFGCTRL_X0Y3        BUFG (Prop_bufg_I_O)         0.093     4.228 r  pcie_7x_0_support_i/icap_clock_bufg/O
+                         net (fo=174, routed)         1.300     5.528    pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].rd_stg_inst/rd_clk
+    SLICE_X157Y156       FDCE                                         r  pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].rd_stg_inst/Q_reg_reg[2]/C
+                         clock pessimism             -0.224     5.304    
+    SLICE_X157Y156       FDCE (Hold_fdce_C_D)         0.118     5.422    pcie_7x_0_support_i/pcie_7x_0_i/inst/inst/pr_loader_i/PIO_FPC_i/PIO_EP_FPC_inst/data_transfer_i/fastConfigFIFO_i/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gnxpm_cdc.gsync_stage[1].rd_stg_inst/Q_reg_reg[2]
+  -------------------------------------------------------------------
+                         data arrival                           5.478    
+                         clock arrival                          5.422    
+  -------------------------------------------------------------------
+                         relative delay                         0.056    
+
+
+

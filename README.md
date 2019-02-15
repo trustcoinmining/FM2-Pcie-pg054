@@ -7,7 +7,7 @@ You can refer here. [pg054 Xilinx pdf](https://www.xilinx.com/support/documentat
 
 archive is pre-built (synthesized) vivado projects.
 
-You can customize it from the ./pcie_7x_0_ex/import/pci_app_7x.v 
+You can customize it from the `./pcie_7x_0_ex/import/pci_app_7x.v `
 
 After bistream generation , we are providing the pci-e rescan scripts.
 

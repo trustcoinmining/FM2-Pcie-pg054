@@ -21,6 +21,20 @@ lspci | grep Xilinx
 01:00.0 Memory Conroller: Xilinx Corporation Device 7024
 ```
 
+## Directory structure
+
+1> tandem prom : 
+```
+prom/mcs-bitstream-prom   # includes bitstream and mcs files
+prom/pcie_7x_0_ex         # full synthesized vivado projects
+
+pci-e/mcs-bitstream-pcie   # includes 2 bitstream and mcs files , 1 is boot prom, 2 is test pcie prom
+pci-e/pcie_7x_0_ex         # full synthesized vivado projects
+
+utils/tcm-fm-tpcie_sw      # tandem FPC kernel module and test sw
+utils/rescan2.sh           # fpga pcie device rescan scripts, no need to reboot your PC.
+```
+
 You can identify it.
 
 Any feedback is welcome and we have a bounty program, share project application source for FM2L.

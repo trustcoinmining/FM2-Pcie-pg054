@@ -4,7 +4,7 @@ PCI-e PROM and PCI-e Application Tutorial for FM2, port from Xilinx pg054 tutori
 
 ## Here is PCI-e usage examples for FM2 board.
 
-You can refer here. [pg054 Xilinx pdf](https://www.xilinx.com/support/documentation/ip_documentation/pcie_7x/v3_0/pg054-7series-pcie.pdf)
+You can refer here. [pg054 Xilinx pdf page from 157](https://www.xilinx.com/support/documentation/ip_documentation/pcie_7x/v3_0/pg054-7series-pcie.pdf)
 
 archive is pre-built (synthesized) vivado projects.
 
